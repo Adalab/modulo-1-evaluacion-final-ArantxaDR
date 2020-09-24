@@ -1,4 +1,5 @@
 .Main {
+  background-color: $background-color-white;
   display: flex;
   flex-direction: column;
 }
@@ -8,9 +9,14 @@
 }
 .Main-small {
   color: $color-iceblue;
+  font-size: 14px;
+  text-transform: capitalize;
 }
 .Main-donec {
   color: $font-color;
+  font-size: 18px;
+  padding-top: 15px;
+  text-align: justify;
 }
 .Main-text--go {
   width: 76px;
@@ -18,19 +24,27 @@
   padding: 12px 24px;
   color: $color-orange;
   border: $color-orange solid 2px;
-  background-color: $backgroun-color-white;
-  border-radius: 22.5px;
+  background-color: $background-color-white;
+  border-radius: $radius;
   margin: 15px;
 }
+.Main-text--title {
+  text-transform: capitalize;
+}
+
 .Main-text--second {
   background-color: $color-iceblue;
 }
 .Main-text--more {
   background-color: $color-orange;
   color: $color-white;
-  border-radius: 22.5px;
+  border-radius: $radius;
   font-size: 20px;
   width: 184px;
   height: 45px;
   padding: 12px 30px 36px;
+}
+.Main-arrow {
+  background-color: $background-color-white;
+  border-radius: $radius;
 }
