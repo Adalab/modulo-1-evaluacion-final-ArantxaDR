@@ -26,6 +26,8 @@
   font-style: normal;
   letter-spacing: normal;
   text-align: center;
+  position: relative;
+  top: 250px;
 }
 
 .Header-text--anonymous {
@@ -44,4 +46,11 @@
   font-size: 16px;
   font-weight: normal;
   line-height: normal;
+}
+.Header-arrow {
+  padding: 15px;
+  background-color: $backgroun-color-white;
+  border-radius: 22.5px;
+  position: relative;
+  top: 300px;
 }
