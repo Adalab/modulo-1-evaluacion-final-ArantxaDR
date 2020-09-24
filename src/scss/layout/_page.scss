@@ -1,7 +1,36 @@
-body {
-  padding: 2rem;
-  height: 100vh;
-  background: url("../images/logo-adalab.png") center center no-repeat
-    $color-white;
-  font-family: $font-main;
+.Main {
+  display: flex;
+  flex-direction: column;
+}
+.Main-text,
+.Main-text--second {
+  padding: 15px;
+}
+.Main-small {
+  color: $color-iceblue;
+}
+.Main-donec {
+  color: $font-color;
+}
+.Main-text--go {
+  width: 76px;
+  height: 45px;
+  padding: 12px 24px;
+  color: $color-orange;
+  border: $color-orange solid 2px;
+  background-color: $backgroun-color-white;
+  border-radius: 22.5px;
+  margin: 15px;
+}
+.Main-text--second {
+  background-color: $color-iceblue;
+}
+.Main-text--more {
+  background-color: $color-orange;
+  color: $color-white;
+  border-radius: 22.5px;
+  font-size: 20px;
+  width: 184px;
+  height: 45px;
+  padding: 12px 30px 36px;
 }
