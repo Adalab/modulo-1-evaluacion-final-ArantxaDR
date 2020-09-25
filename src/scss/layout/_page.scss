@@ -2,69 +2,68 @@
   background-color: $background-color-white;
   display: flex;
   flex-direction: column;
-}
-.Main-text,
-.Main-text--second {
-  padding: 15px;
-}
-.Main-small {
-  color: $color-iceblue;
-  font-size: 14px;
-  text-transform: capitalize;
-}
-.Main-donec {
-  color: $font-color;
-  font-size: 18px;
-  padding-top: 15px;
-  text-align: justify;
-}
-.Main-text--go {
-  width: 76px;
-  height: 45px;
-  padding: 12px 24px;
-  color: $color-orange;
-  border: $color-orange solid 2px;
-  background-color: $background-color-white;
-  border-radius: $radius;
-  margin: 15px;
-}
-.Main-text--title {
-  text-transform: capitalize;
-  text-align: center;
-  font-size: 24px;
-  grid-column: span 4;
-  grid-row: span 1;
-}
-
-.Main-text--second {
-  background-color: $color-iceblue;
-  display: grid;
-  grid-template-columns: repeat(3, 55px);
-  grid-template-rows: repeat(4, 55px);
-  grid-gap: 0;
-  text-align: center;
-  justify-items: center;
-  &_item1 {
-    grid-column: span 4;
-    grid-row: span 2;
+  &-text,
+  &-text--second {
+    padding: 15px;
   }
-  &_item2 {
-    grid-column: span 4;
-    grid-row: span 3;
+  &-small {
+    color: $color-iceblue;
+    font-size: 14px;
+    text-transform: capitalize;
   }
-  &_item3 {
-    grid-column: span 4;
-    grid-row: span 4;
+  &-donec {
+    color: $font-color;
+    font-size: 18px;
+    padding-top: 15px;
+    text-align: justify;
   }
-}
-.Main-text--more {
-  background-color: $color-orange;
-  color: $color-white;
-  border-radius: $radius;
-  font-size: 20px;
-  width: 184px;
-  height: 45px;
-  padding: 12px 30px 36px;
-  text-align: center;
-  grid-column: span 4;
+  &-text--go {
+    width: 76px;
+    height: 45px;
+    padding: 12px 24px;
+    color: $color-orange;
+    border: $color-orange solid 2px;
+    background-color: $background-color-white;
+    border-radius: $radius;
+    margin: 15px;
+  }
+  &-text--title {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    grid-column: span 4;
+    grid-row: span 1;
+  }
+  &-text--second {
+    background-color: $color-iceblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0;
+    text-align: center;
+    justify-items: center;
+    &_item1 {
+      grid-column: span 4;
+      grid-row: span 2;
+    }
+    &_item2 {
+      grid-column: span 4;
+      grid-row: span 3;
+    }
+    &_item3 {
+      grid-column: span 4;
+      grid-row: span 4;
+    }
+  }
+  &-text--more {
+    background-color: $color-orange;
+    color: $color-white;
+    border-radius: $radius;
+    font-size: 20px;
+    width: 184px;
+    height: 45px;
+    padding: 12px 30px 36px;
+    text-align: center;
+    grid-column: span 4;
+  }
 }
