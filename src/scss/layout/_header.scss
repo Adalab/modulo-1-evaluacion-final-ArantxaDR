@@ -27,26 +27,25 @@
   font-style: normal;
   letter-spacing: normal;
   text-align: center;
+  &--anonymous {
+    width: 290px;
+    height: 110px;
+    font-size: 42px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.31;
+    text-transform: uppercase;
+  }
+  &--inhac {
+    width: 290px;
+    height: 21px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+  }
 }
 
-.Header-text--anonymous {
-  width: 290px;
-  height: 110px;
-  font-size: 42px;
-  font-weight: bold;
-  font-style: normal;
-  line-height: 1.31;
-  text-transform: uppercase;
-}
-
-.Header-text--inhac {
-  width: 290px;
-  height: 21px;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: normal;
-}
 .Header-arrow {
   padding: 15px;
   background-color: $background-color-white;
