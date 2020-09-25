@@ -1,9 +1,10 @@
-.Main-arrow {
+.Footer-arrow {
   background-color: $background-color-white;
   border-radius: $radius;
   padding: 9px 8px;
   height: 45px;
   width: 45px;
+  transform: translate(0, -45%);
 }
 .Footer {
   background-color: $color-dark-grey-blue;
@@ -35,4 +36,7 @@
   &--heart {
     color: $color-orange;
   }
+}
+.item2 {
+  margin-bottom: 45px;
 }

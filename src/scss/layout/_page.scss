@@ -32,17 +32,18 @@
   text-transform: capitalize;
   text-align: center;
   font-size: 24px;
-  grid-column: span 3;
+  grid-column: span 4;
   grid-row: span 1;
 }
 
 .Main-text--second {
   background-color: $color-iceblue;
   display: grid;
-  grid-template-columns: repeat(2) 55px;
-  grid-template-rows: repeat(5) 55px;
+  grid-template-columns: repeat(3, 55px);
+  grid-template-rows: repeat(4, 55px);
   grid-gap: 0;
   text-align: center;
+  justify-items: center;
   &_item1 {
     grid-column: span 4;
     grid-row: span 2;
@@ -65,4 +66,5 @@
   height: 45px;
   padding: 12px 30px 36px;
   text-align: center;
+  grid-column: span 4;
 }
