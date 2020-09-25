@@ -1,17 +1,18 @@
-.Footer-arrow {
-  background-color: $background-color-white;
-  border-radius: $radius;
-  padding: 9px 8px;
-  height: 45px;
-  width: 45px;
-  transform: translate(0, -45%);
-}
 .Footer {
   background-color: $color-dark-grey-blue;
   display: flex;
   flex-direction: column;
   align-items: center;
   line-height: 1.88;
+
+  &-arrow {
+    background-color: $background-color-white;
+    border-radius: $radius;
+    padding: 9px 8px;
+    height: 45px;
+    width: 45px;
+    transform: translate(0, -45%);
+  }
 
   &-list1,
   &-list2 {
@@ -42,14 +43,22 @@
 
 @media all and (min-width: 768px) {
   .Footer {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-around;
     &-list1,
     &-list2 {
       align-items: baseline;
+      order: 3;
+    }
+    &-arrow {
+      transform: translate(325px, -95px);
     }
   }
 }
-.item2 {
-  margin-bottom: 45px;
+
+//-----DESKTOP @MEDIA-----//
+@media all and (min-width: 1200px) {
+  .Footer-arrow {
+    transform: translate(550px, -95px);
+  }
 }
