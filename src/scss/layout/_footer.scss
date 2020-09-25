@@ -15,6 +15,12 @@
   &-list1 {
     padding-top: 43px;
   }
+  &-small {
+    color: $color-white;
+    &--heart {
+      color: $color-orange;
+    }
+  }
 }
 
 .Link {
@@ -23,9 +29,16 @@
   text-decoration: none;
   color: $color-white;
 }
-.Footer-small {
-  color: $color-white;
-  &--heart {
-    color: $color-orange;
+
+//-----DESKTOP @MEDIA-----//
+
+@media all and (min-width: 768px) {
+  .Footer {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    &-list1,
+    &-list2 {
+      align-items: baseline;
+    }
   }
 }
