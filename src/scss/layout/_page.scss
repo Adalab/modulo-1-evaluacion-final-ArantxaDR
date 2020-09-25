@@ -30,10 +30,31 @@
 }
 .Main-text--title {
   text-transform: capitalize;
+  text-align: center;
+  font-size: 24px;
+  grid-column: span 3;
+  grid-row: span 1;
 }
 
 .Main-text--second {
   background-color: $color-iceblue;
+  display: grid;
+  grid-template-columns: repeat(2) 55px;
+  grid-template-rows: repeat(5) 55px;
+  grid-gap: 0;
+  text-align: center;
+  &_item1 {
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+  &_item2 {
+    grid-column: span 4;
+    grid-row: span 3;
+  }
+  &_item3 {
+    grid-column: span 4;
+    grid-row: span 4;
+  }
 }
 .Main-text--more {
   background-color: $color-orange;
@@ -43,11 +64,15 @@
   width: 184px;
   height: 45px;
   padding: 12px 30px 36px;
-}
-.Main-arrow {
-  background-color: $background-color-white;
-  border-radius: $radius;
-  padding: 9px 8px;
-  height: 45px;
-  width: 45px;
+  text-align: center;
+
+  .Main-arrow {
+    background-color: $background-color-white;
+    border-radius: $radius;
+    padding: 9px 8px;
+    height: 45px;
+    width: 45px;
+    margin-top: 38px;
+    align-items: center;
+  }
 }
