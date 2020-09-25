@@ -2,14 +2,26 @@
   background-color: $color-dark-grey-blue;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   line-height: 1.88;
-  padding: 30px;
+
+  &-list1,
+  &-list2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  &-list1 {
+    padding-top: 43px;
+  }
 }
+
 .Link {
   font-size: 16px;
   text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
 }
 .Footer-small {
   color: $color-white;
