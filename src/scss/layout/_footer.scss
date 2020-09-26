@@ -11,7 +11,8 @@
     padding: 9px 8px;
     height: 45px;
     width: 45px;
-    transform: translate(0, -45%);
+    position: relative;
+    top: -5%;
   }
 
   &-list1,
@@ -36,7 +37,7 @@
 .Link {
   font-size: 16px;
   text-transform: uppercase;
-  text-decoration: none;
+
   color: $color-white;
 }
 
@@ -52,14 +53,21 @@
       order: 3;
     }
     &-arrow {
-      transform: translate(325px, -95px);
+      top: -50%;
+      left: 42%;
     }
   }
 }
 
 //-----DESKTOP @MEDIA-----//
 @media all and (min-width: 1200px) {
-  .Footer-arrow {
-    transform: translate(550px, -95px);
+  .Footer {
+    &-small {
+      justify-content: baseline;
+    }
+    &-arrow {
+      bottom: 250%;
+      left: 42%;
+    }
   }
 }

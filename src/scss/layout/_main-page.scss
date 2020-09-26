@@ -18,15 +18,19 @@
     padding-top: 15px;
     text-align: justify;
   }
+
   &-text--go {
     width: 76px;
     height: 45px;
     padding: 12px 24px;
-    color: $color-orange;
+
     border: $color-orange solid 2px;
-    background-color: $background-color-white;
     border-radius: $radius;
     margin: 15px;
+    transition: transform ease 1s;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   &-text--title {
     text-transform: capitalize;
@@ -68,16 +72,30 @@
     padding: 12px 30px 36px;
     text-align: center;
     transform: translate(50%, 0);
+    transition: background-color ease 0.8s;
+    &:hover {
+      background-color: $color-secondary;
+    }
   }
+}
+.Link-go {
+  color: $color-orange;
+  text-decoration: none;
 }
 //-----TABLET @MEDIA-----//
 @media all and (min-width: 768px) {
   .Main {
     &-text {
+      font-size: 26px;
       padding-left: 39px;
     }
+    &-donec {
+      font-size: 20px;
+    }
     &-text--go {
+      font-size: 20px;
       margin-left: 39px;
+      padding: 7px 23px;
     }
     &-text--second {
       padding-bottom: 60px;
@@ -86,6 +104,7 @@
         font-size: 26px;
       }
       &_items {
+        font-size: 20px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
@@ -102,14 +121,6 @@
       }
     }
     &-text--more {
-      background-color: $color-orange;
-      color: $color-white;
-      border-radius: $radius;
-      font-size: 20px;
-      width: 184px;
-      height: 45px;
-      padding: 12px 30px 36px;
-      text-align: center;
       transform: translate(117%, 0);
     }
   }
@@ -117,16 +128,17 @@
 //-----DESKTOP @MEDIA -----//
 .Main {
   &-text {
-    padding-left: 39px;
+    font-size: 32px;
+    padding-left: 270px;
   }
   &-text--go {
-    margin-left: 39px;
+    margin-left: 270px;
   }
   &-text--second {
     padding-bottom: 60px;
     background-color: $color-iceblue;
     &--title2 {
-      font-size: 26px;
+      font-size: 32px;
     }
     &_items {
       display: grid;
@@ -145,14 +157,6 @@
     }
   }
   &-text--more {
-    background-color: $color-orange;
-    color: $color-white;
-    border-radius: $radius;
-    font-size: 20px;
-    width: 184px;
-    height: 45px;
-    padding: 12px 30px 36px;
-    text-align: center;
-    transform: translate(117%, 0);
+    transform: translate(320%, 0);
   }
 }
