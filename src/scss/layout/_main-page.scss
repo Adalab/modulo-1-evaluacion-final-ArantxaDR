@@ -1,6 +1,7 @@
 .Main {
   background-color: $background-color-white;
   &-text {
+    padding: 15px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -14,6 +15,7 @@
   &-donec {
     color: $font-color;
     font-size: 18px;
+    padding-top: 15px;
     text-align: justify;
   }
 
@@ -21,10 +23,11 @@
     width: 76px;
     height: 45px;
     padding: 12px 24px;
+
     border: $color-orange solid 2px;
     border-radius: $radius;
+    margin: 15px;
     transition: transform ease 1s;
-
     &:hover {
       transform: scale(1.2);
     }
@@ -35,8 +38,12 @@
   }
   &-text--title2 {
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    text-transform: capitalize;
   }
   &-text--second {
+    padding-bottom: 60px;
     background-color: $color-iceblue;
     &_items {
       display: grid;
@@ -65,7 +72,8 @@
     height: 45px;
     padding: 12px 30px 36px;
     text-align: center;
-    transform: translate(50%, 50%);
+    margin-left: 50%;
+    transform: translate(-50%, 0);
     transition: background-color ease 0.8s;
     &:hover {
       background-color: $color-secondary;
@@ -81,6 +89,7 @@
   .Main {
     &-text {
       font-size: 26px;
+      padding-left: 39px;
     }
     &-donec {
       font-size: 20px;
@@ -91,6 +100,7 @@
       padding: 7px 23px;
     }
     &-text--second {
+      padding-bottom: 60px;
       background-color: $color-iceblue;
       &--title2 {
         font-size: 26px;
@@ -100,6 +110,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
+        padding: 40px;
       }
       &_item1 {
         grid-column: 1/2;
@@ -111,41 +122,39 @@
         grid-column: 3/4;
       }
     }
-    &-text--more {
-      transform: translate(117%, 0);
-    }
   }
 }
 //-----DESKTOP @MEDIA -----//
-.Main {
-  &-text {
-    font-size: 32px;
-  }
-  &-text--go {
-    margin: 1px;
-  }
-  &-text--second {
-    padding-bottom: 60px;
-    background-color: $color-iceblue;
-    &--title2 {
+@media all and (min-width: 1200px) {
+  .Main {
+    &-text {
       font-size: 32px;
+      padding-left: 270px;
     }
-    &_items {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr;
+    &-text--go {
+      margin-left: 270px;
     }
-    &_item1 {
-      grid-column: 1/2;
+    &-text--second {
+      padding-bottom: 60px;
+      background-color: $color-iceblue;
+      &--title2 {
+        font-size: 32px;
+      }
+      &_items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        padding: 40px;
+      }
+      &_item1 {
+        grid-column: 1/2;
+      }
+      &_item2 {
+        grid-column: 2/3;
+      }
+      &_item3 {
+        grid-column: 3/4;
+      }
     }
-    &_item2 {
-      grid-column: 2/3;
-    }
-    &_item3 {
-      grid-column: 3/4;
-    }
-  }
-  &-text--more {
-    transform: translate(320%, 0);
   }
 }

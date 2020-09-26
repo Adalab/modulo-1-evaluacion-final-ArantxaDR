@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   line-height: 1.88;
+  padding-bottom: 45px;
 
   &-arrow {
     background-color: $background-color-white;
@@ -12,7 +13,7 @@
     height: 45px;
     width: 45px;
     position: relative;
-    top: -5%;
+    margin-top: -22px;
   }
 
   &-list1,
@@ -37,6 +38,7 @@
 .Link {
   font-size: 16px;
   text-transform: uppercase;
+
   color: $color-white;
 }
 
@@ -46,14 +48,18 @@
   .Footer {
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
+    &-small {
+      text-align: left;
+      align-items: baseline;
+      padding-top: 43px;
+    }
     &-list1,
     &-list2 {
       align-items: baseline;
       order: 3;
     }
     &-arrow {
-      position: relative;
-      top: -50%;
       left: 42%;
     }
   }
@@ -64,11 +70,6 @@
   .Footer {
     &-small {
       justify-content: baseline;
-    }
-    &-arrow {
-      position: relative;
-      bottom: 600%;
-      left: 42%;
     }
   }
 }
