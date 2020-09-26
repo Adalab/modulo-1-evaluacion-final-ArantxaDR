@@ -3,39 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Evaluación final mósulo 1</title>
+    <title>Evaluación final módulo 1</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <header>Anonymous proxy In hac habitasse platea dictumst.</header>
-    <main>
-      <small> Insomnia tips.</small>
-      <h1>Looking throught a window.</h1>
-      <p>
-        Donec accumsa, nulla ut volutpat porttitor, quam odio tempus felis, at
-        luctus ex diam nec lectus. Vivamus semper sodales rutrum.
-      </p>
-      <a>Go</a>
-      <h2>3 reasons to purchase</h2>
-      <h3>Ut sed metus</h3>
-      <p>Lorem ipsum dolor sit amet, consecteur.</p>
-      <h3>Curabitur ac erat</h3>
-      <p>Mauris mattis urna quis lorem molestie.</p>
-      <h3>Morbi dictum</h3>
-      <p>Aliquam in dolor et dolor tincidunt.</p>
-      <a>More reasons</a>
+    <!-- HEADER -->
+    <header class="Header" id="Header">
+      <div class="Header-menu">
+        <a class="Link" href="https://adalab.es/" target="_blank">
+          <img
+            class="Header-menu--icon"
+            src="/assets/images/ico-menu.png"
+            alt="Icono menú"
+          />
+        </a>
+      </div>
+      <div class="Header-text">
+        <p class="Header-text--anonymous">Anonymous proxy</p>
+        <p class="Header-text--inhac">In hac habitasse platea dictumst.</p>
+      </div>
+      <div class="Header-arrow">
+        <a class="Link" href="#Reasons"
+          ><img src="./assets/images/ico-scroll-down.png" alt="arrow-down"
+        /></a>
+      </div>
+
+    </header>
+    <!-- MAIN -->
+    <main class="Main">
+      <div class="Main-text">
+        <small class="Main-small"> Insomnia tips.</small>
+        <h1 class="Main-text--title">Looking throught a window.</h1>
+        <p class="Main-donec">
+          Donec accumsa, nulla ut volutpat porttitor, quam odio tempus felis, at
+          luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+        </p>
+      </div>
+      <div class="Main-text--go">
+        <a href="https://adalab.es" target="_blank" class="Link-go">Go</a>
+      </div>
+      <div class="Main-text--second">
+        <h2 id="Reasons" class="Main-text--title2">3 reasons to purchase</h2>
+        <div class="Main-text--second_items">
+          <div class="Main-text--second_item1">
+            <h3>Ut sed metus</h3>
+            <p>
+              Lorem ipsum dolor<br />
+              sit amet, consecteur.
+            </p>
+          </div>
+          <div class="Main-text--second_item2">
+            <h3>Curabitur ac erat</h3>
+            <p>Mauris mattis urna<br />quis lorem molestie.</p>
+          </div>
+          <div class="Main-text--second_item3">
+            <h3>Morbi dictum</h3>
+            <p>
+              Aliquam in dolor et<br />
+              dolor tincidunt.
+            </p>
+          </div>
+        </div>
+        <div class="Main-text--more">
+          <a href="https://adalab.es/" target="_blank" class="Link">More reasons</a>
+        </div>
+      </div>
+
     </main>
-    <footer>
-      <p>@2017</p>
-      <small>We love components</small>
-      <ul>
-        <li>Articles</li>
-        <li>Events</li>
-        <li>Reasons</li>
-        <li>Tips</li>
-        <li>Twitter</li>
-        <li>Instagram</li>
-        <li>Mastodon.Social</li>
+    <!-- FOOTER -->
+    <footer class="Footer">
+      <div class="Footer-arrow">
+        <a class="Link" href="#Header"
+          ><img src="/assets/images/ico-arrow.png" alt="arrow-up"
+        /></a>
+      </div>
+      <ul class="Footer-list1">
+        <li>
+          <a class="Link" href="https://adalab.es/" target="_blank">Articles</a>
+        </li>
+        <li><a class="Link" href="https://adalab.es/" target="_blank">Events</a></li>
+        <li><a class="Link" href="https://adalab.es/" target="_blank">Reasons</a></li>
+        <li><a class="Link" href="https://adalab.es/" target="_blank">Tips</a></li>
       </ul>
+      <ul class="Footer-list2">
+        <li><a class="Link" href="https://adalab.es/" target="_blank">Twitter</a></li>
+        <li>
+          <a class="Link" href="https://adalab.es/" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a class="Link" href="https://adalab.es/" target="_blank"
+            >Mastodon.Social</a
+          >
+        </li>
+      </ul>
+      <small class="Footer-small">
+        &copy;2017<br />
+        we <span class="Footer-small--heart">❤︎</span> components
+      </small>
+
     </footer>
   </body>
 </html>
