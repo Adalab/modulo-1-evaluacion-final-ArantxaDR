@@ -1,7 +1,6 @@
 .Main {
   background-color: $background-color-white;
   &-text {
-    padding: 15px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -15,7 +14,6 @@
   &-donec {
     color: $font-color;
     font-size: 18px;
-    padding-top: 15px;
     text-align: justify;
   }
 
@@ -23,7 +21,6 @@
     width: 76px;
     height: 45px;
     padding: 12px 24px;
-
     border: $color-orange solid 2px;
     border-radius: $radius;
     margin: 15px;
@@ -38,11 +35,8 @@
   }
   &-text--title2 {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 45px;
   }
   &-text--second {
-    padding-bottom: 60px;
     background-color: $color-iceblue;
     &_items {
       display: grid;
@@ -87,7 +81,6 @@
   .Main {
     &-text {
       font-size: 26px;
-      padding-left: 39px;
     }
     &-donec {
       font-size: 20px;
@@ -98,7 +91,6 @@
       padding: 7px 23px;
     }
     &-text--second {
-      padding-bottom: 60px;
       background-color: $color-iceblue;
       &--title2 {
         font-size: 26px;
@@ -108,7 +100,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
-        padding: 40px;
       }
       &_item1 {
         grid-column: 1/2;
@@ -129,10 +120,9 @@
 .Main {
   &-text {
     font-size: 32px;
-    padding-left: 270px;
   }
   &-text--go {
-    margin-left: 270px;
+    margin: 1px;
   }
   &-text--second {
     padding-bottom: 60px;
@@ -144,7 +134,6 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr;
-      padding: 40px;
     }
     &_item1 {
       grid-column: 1/2;
