@@ -1,14 +1,12 @@
 .Main {
   background-color: $background-color-white;
   &-text {
+    padding: 15px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  &-text,
-  &-text--second {
-    padding: 15px;
-  }
+
   &-small {
     color: $color-iceblue;
     font-size: 14px;
@@ -36,24 +34,26 @@
   }
   &-text--title2 {
     text-align: center;
+    padding-top: 30px;
   }
   &-text--second {
+    padding-bottom: 60px;
     background-color: $color-iceblue;
     &_items {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
-      grid-gap: 0;
-      justify-items: center;
+      grid-template-rows: repeat(3, 8rem);
+      text-align: center;
+      padding: 75px;
     }
     &_item1 {
-      grid-row: 1;
+      grid-column: span 2;
     }
     &_item2 {
-      grid-row: 2;
+      grid-column: span 2;
     }
     &_item3 {
-      grid-row: 3;
+      grid-column: span 2;
     }
   }
   &-text--more {
@@ -65,6 +65,45 @@
     height: 45px;
     padding: 12px 30px 36px;
     text-align: center;
-    grid-column: span 4;
+    position: relative;
+    left: 73px;
+  }
+}
+//-----TABLET @MEDIA-----//
+@media all and (min-width: 768px) {
+  &-text--second {
+    padding-bottom: 60px;
+    background-color: $color-iceblue;
+    &--title2 {
+      font-size: 26px;
+    }
+    &_items {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 8rem);
+      text-align: center;
+      padding: 75px;
+    }
+    &_item1 {
+      grid-column: span 2;
+    }
+    &_item2 {
+      grid-column: span 2;
+    }
+    &_item3 {
+      grid-column: span 2;
+    }
+  }
+  &-text--more {
+    background-color: $color-orange;
+    color: $color-white;
+    border-radius: $radius;
+    font-size: 20px;
+    width: 184px;
+    height: 45px;
+    padding: 12px 30px 36px;
+    text-align: center;
+    position: relative;
+    left: 73px;
   }
 }
