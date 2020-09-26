@@ -5,7 +5,7 @@
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -50,7 +50,6 @@
 //-----TABLET @MEDIA-----//
 @media all and (min-width: 768px) {
   .Header-text {
-    text-align: center;
     &--anonymous {
       font-size: 80px;
     }
@@ -63,7 +62,6 @@
 //-----DESKTOP @MEDIA-----//
 @media all and (min-width: 1200px) {
   .Header-text {
-    text-align: center;
     &--anonymous {
       font-size: 100px;
     }
