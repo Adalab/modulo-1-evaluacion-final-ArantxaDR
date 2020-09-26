@@ -23,8 +23,8 @@
     padding: 12px 24px;
     border: $color-orange solid 2px;
     border-radius: $radius;
-    margin: 15px;
     transition: transform ease 1s;
+
     &:hover {
       transform: scale(1.2);
     }
@@ -65,7 +65,7 @@
     height: 45px;
     padding: 12px 30px 36px;
     text-align: center;
-    transform: translate(50%, 0);
+    transform: translate(50%, 50%);
     transition: background-color ease 0.8s;
     &:hover {
       background-color: $color-secondary;

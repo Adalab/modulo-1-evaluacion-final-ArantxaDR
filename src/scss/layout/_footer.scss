@@ -37,7 +37,6 @@
 .Link {
   font-size: 16px;
   text-transform: uppercase;
-
   color: $color-white;
 }
 
@@ -68,7 +67,7 @@
     }
     &-arrow {
       position: relative;
-      bottom: 500%;
+      bottom: 600%;
       left: 42%;
     }
   }
