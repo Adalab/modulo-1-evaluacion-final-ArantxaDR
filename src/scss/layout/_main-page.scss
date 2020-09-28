@@ -6,7 +6,14 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
-
+  .Title-new {
+    background-color: $color-orange;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    color: $color-white;
+  }
   &-small {
     color: $color-iceblue;
     font-size: 14px;
@@ -23,7 +30,6 @@
     width: 76px;
     height: 45px;
     padding: 12px 24px;
-
     border: $color-orange solid 2px;
     border-radius: $radius;
     margin: 15px;
@@ -87,6 +93,14 @@
 //-----TABLET @MEDIA-----//
 @media all and (min-width: 768px) {
   .Main {
+    .Title-new {
+      background-color: $color-dark-grey-blue;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     &-text {
       font-size: 26px;
       padding-left: 39px;
